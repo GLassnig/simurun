@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>simurun2Class</class>
+ <widget class="QMainWindow" name="simurun2Class">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0,1">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="appLogoLabel">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>250</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>250</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../simurun2.qrc">:/images/images/simutrans_starter_logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="indent">
+         <number>-1</number>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::NoTextInteraction</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>&amp;Optionen</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,1">
+           <item row="1" column="0" rowspan="2" colspan="2">
+            <widget class="QCheckBox" name="checkBoxFullscreen">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Simutrans im Vollbildmodus starten.</string>
+             </property>
+             <property name="text">
+              <string>&amp;Vollbildmodus</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QCheckBox" name="soundCheckBox">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Klänge AN</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QCheckBox" name="lastSavedGameCheckBox">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Bei Aktivierung wird das Programmfenster 
+nicht angezeigt und das zuletzt gespeicherte 
+Spiel automatisch gestartet</string>
+             </property>
+             <property name="text">
+              <string>Letztes Spiel starten.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="2">
+            <widget class="QCheckBox" name="musikCheckBox">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Musik AN</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="2">
+            <widget class="QRadioButton" name="rbLokalesSpiel">
+             <property name="minimumSize">
+              <size>
+               <width>110</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Ein lokal gespeichertes Spiel laden.</string>
+             </property>
+             <property name="text">
+              <string>&amp;Lokales Spiel</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" colspan="2">
+            <widget class="QCheckBox" name="cbServer">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Starte Simutrans als Server.</string>
+             </property>
+             <property name="text">
+              <string>Starte als Game Server</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0" colspan="2">
+            <widget class="QRadioButton" name="rbNetzSpiel">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Zu einenm neuen Netzwerkspiel verbinden
+oder ein gespeichertes Netzwerkspiel laden.</string>
+             </property>
+             <property name="text">
+              <string>&amp;Netzwerkspiel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Das Pakset, das verwendet werden soll.</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="midLineWidth">
+              <number>5</number>
+             </property>
+             <property name="text">
+              <string>&amp;Pakset</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="margin">
+              <number>5</number>
+             </property>
+             <property name="buddy">
+              <cstring>comboBoxPakSets</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBoxPakSets">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Das Pakset, das verwendet werden soll.</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="gb_Saved_Games">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>2</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>&amp;Gespeicherte Spielstände</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QTableWidget" name="tableWidget_SavedGames">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Die gespeicherten Spielstände. Es muss darauf geachtet werden, dass das gespeicherte Spiel zum aktiven Pakset passt.</string>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::DoubleClicked</set>
+             </property>
+             <property name="showDropIndicator" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+             <property name="sortingEnabled">
+              <bool>false</bool>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+             <property name="cornerButtonEnabled">
+              <bool>false</bool>
+             </property>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderHighlightSections">
+              <bool>false</bool>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButtonLoadGame">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Gespeichertes Spiel laden.</string>
+             </property>
+             <property name="text">
+              <string>Sta&amp;rte Spiel</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../simurun2.qrc">
+               <normaloff>:/images/images/24x24/run-build.svg</normaloff>:/images/images/24x24/run-build.svg</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonDeleteGame">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Gespeichertes Spiel löschen.</string>
+             </property>
+             <property name="text">
+              <string>L&amp;öschen</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../simurun2.qrc">
+               <normaloff>:/images/images/16x16/edit-delete.svg</normaloff>:/images/images/16x16/edit-delete.svg</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonReload">
+             <property name="toolTip">
+              <string>Den Tabelleninhalt erneut einlesen.</string>
+             </property>
+             <property name="text">
+              <string>Neu laden</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../simurun2.qrc">
+               <normaloff>:/images/images/16x16/view-refresh.svg</normaloff>:/images/images/16x16/view-refresh.svg</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButtonAbout">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Zeigt Informationen über Sumitrans Starter an.</string>
+        </property>
+        <property name="text">
+         <string>&amp;Über....</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../simurun2.qrc">
+          <normaloff>:/images/images/16x16/help-about.svg</normaloff>:/images/images/16x16/help-about.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonHelp">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&amp;Hilfe</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../simurun2.qrc">
+          <normaloff>:/images/images/16x16/system-help.svg</normaloff>:/images/images/16x16/system-help.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonSettings">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Einstellungen öffnen.</string>
+        </property>
+        <property name="text">
+         <string>&amp;Einstellungen</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../simurun2.qrc">
+          <normaloff>:/images/images/16x16/configure.svg</normaloff>:/images/images/16x16/configure.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonNewGame">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Neues Spiel starten.</string>
+        </property>
+        <property name="text">
+         <string>&amp;Neues Spiel</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../simurun2.qrc">
+          <normaloff>:/images/images/simutrans.png</normaloff>:/images/images/simutrans.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonExit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Simutrans Starter beenden.</string>
+        </property>
+        <property name="text">
+         <string>&amp;Beenden</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../simurun2.qrc">
+          <normaloff>:/images/images/16x16/application-exit.svg</normaloff>:/images/images/16x16/application-exit.svg</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>840</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>&amp;Datei</string>
+    </property>
+    <addaction name="actionBeenden"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <widget class="QMenu" name="menuVersionenpruefen">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Auf neue &amp;Versionen prüfen</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../simurun2.qrc">
+       <normaloff>:/images/images/22x22/update-low.svg</normaloff>:/images/images/22x22/update-low.svg</iconset>
+     </property>
+     <addaction name="actionSS2_Update"/>
+     <addaction name="actionSimutrans"/>
+    </widget>
+    <addaction name="actionScreenshots"/>
+    <addaction name="separator"/>
+    <addaction name="actionUpdateSimutrans"/>
+    <addaction name="menuVersionenpruefen"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;?</string>
+    </property>
+    <addaction name="actionHandbuch"/>
+    <addaction name="actionSimutransHomepage"/>
+    <addaction name="actionSimutransWiki"/>
+    <addaction name="actionSimutransForum"/>
+    <addaction name="separator"/>
+    <addaction name="action_ueber"/>
+    <addaction name="action_ueber_Qt"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuTools"/>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actionBeenden">
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/16x16/application-exit.svg</normaloff>:/images/images/16x16/application-exit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Beenden</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Q</string>
+   </property>
+  </action>
+  <action name="actionHandbuch">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/16x16/system-help.svg</normaloff>:/images/images/16x16/system-help.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Handbuch</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionUpdateSimutrans">
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/16x16/package-installed-updated.svg</normaloff>:/images/images/16x16/package-installed-updated.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Update Simutrans oder Pakset</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionScreenshots">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/48x48/camera-photo.png</normaloff>:/images/images/48x48/camera-photo.png</iconset>
+   </property>
+   <property name="text">
+    <string>S&amp;creenshot Betrachter</string>
+   </property>
+   <property name="shortcut">
+    <string>F12</string>
+   </property>
+  </action>
+  <action name="actionSimutransWiki">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/128x128/internet-web-browser.svg</normaloff>:/images/images/128x128/internet-web-browser.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Simutrans Online &amp;Wiki</string>
+   </property>
+  </action>
+  <action name="actionSimutransForum">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/128x128/internet-web-browser.svg</normaloff>:/images/images/128x128/internet-web-browser.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Simutrans Support &amp;Forum</string>
+   </property>
+  </action>
+  <action name="actionSS2_Update">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Si&amp;mutrans Starter</string>
+   </property>
+  </action>
+  <action name="actionSimutrans">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Simutrans</string>
+   </property>
+  </action>
+  <action name="actionSimutransHomepage">
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/128x128/internet-web-browser.svg</normaloff>:/images/images/128x128/internet-web-browser.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Simutrans Homepage</string>
+   </property>
+  </action>
+  <action name="action_ueber_KDE">
+   <property name="text">
+    <string>Über &amp;KDE</string>
+   </property>
+  </action>
+  <action name="action_ueber">
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/16x16/help-about.svg</normaloff>:/images/images/16x16/help-about.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Über ....</string>
+   </property>
+  </action>
+  <action name="actionSS2_Config">
+   <property name="text">
+    <string>Simutrans Starter</string>
+   </property>
+  </action>
+  <action name="actionSimuPakSets">
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/pak-file.png</normaloff>:/images/images/pak-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Simutrans Pak Sets</string>
+   </property>
+  </action>
+  <action name="action_ueber_Qt">
+   <property name="icon">
+    <iconset resource="../simurun2.qrc">
+     <normaloff>:/images/images/16x16/qt-logo.png</normaloff>:/images/images/16x16/qt-logo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Über &amp;Qt</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="5" margin="5"/>
+ <tabstops>
+  <tabstop>pushButtonExit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../simurun2.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <signal>this()</signal>
+  <slot>aboutQt()</slot>
+ </slots>
+</ui>

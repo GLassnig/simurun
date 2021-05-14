@@ -1,0 +1,302 @@
+Admont
+Afritz/See
+Althofen
+Amstetten
+Arnoldstein
+Aspang
+Bad Aussee
+Bad Bleiberg
+Bad Goisern
+Bad Hall
+Bad Ischl
+Bad Kleinkirchheim
+Bad Kreuzen
+Bad Leonfelden
+Bad Radkerstein
+Bad Schallerbach
+Bad St.Leonhard
+Bad Tatzmannsdorf
+Bad Vellach
+Bad Vöslau
+Bad Wimsbach-Neydharting
+Baden
+Badgastein
+Bezau
+Bischofshofen
+Blaßnig
+Bleiburg
+Bludenz
+Braunau/Inn
+Bregenz
+Bruck/Leitha
+Bruck/Mur
+Brückl
+Dellach/Drautal
+Deutsch-Griffen
+Deutschkreutz
+Döbriach
+Dornbirn
+Draßnitzdorf
+Dürnkrut
+Ebenthal
+Egg
+Eisenkappel-Vellach
+Eisenstadt
+Eisentratten
+Enns
+Enzelsdorf
+Faak
+Fasching
+Feistritz/Drau
+Feistritz/Gail
+Feistritz/Rosental
+Feistritz ob Bleiburg
+Feld/See
+Feldkirch
+Feldkirchen
+Ferlach
+Ferndorf
+Finkenstein
+Flattach
+Freistadt
+Fresach
+Friesach
+Fürstenfeld
+Galtür
+Gemmersdorf
+Gitschtal
+Gmünd
+Gmunden
+Gradenegg
+Grafendorf
+Graz
+Greifenburg
+Großenegg
+Großkirchheim
+Großreichenau
+Grünburg
+Guggenberg
+Güssing
+Guttaring
+Haberberg
+Hainburg
+Hardegg
+Hallegg
+Hallein
+Hartberg
+Heiligenblut
+Heiligenkreuz
+Hermagor
+Hochegg
+Hochfeistritz
+Hohenems
+Hohenthurn
+Hollabrunn
+Huben
+Hüttenberg
+Innsbruck
+Ischgl
+Johannserberg
+Judenburg
+Kapfenberg
+Kirchbach
+Kirchdorf
+Klagenfurt
+Klein St.Paul
+Klein St.Veit
+Kleindörfl
+Klösterle
+Klosterneuburg
+Knittelfeld
+Kötschach
+Köttmannsdorf
+Kreuth
+Krems
+Kremsbrücke
+Kreuschlach
+Krumpendorf
+Kufstein
+Labegg
+Lamprechtsberg
+Landeck
+Landfraß
+Langegg
+Langen
+Latschach
+Laubendorf
+Lavamünd
+Lech
+Leibnitz
+Leiten
+Leoben
+Lienz
+Liezen
+Lind
+Lindhof
+Linz
+Loiblthal
+Lorenzenberg
+Lustenau
+Magdalensberg
+Malta
+Mannsberg
+Marchegg
+Maria Feicht
+Maria Rain
+Maria Saal
+Maria Wörth
+Matrei
+Mattersburg
+Mauthen
+Metnitz
+Micheldorf
+Millstatt
+Mittelberg
+Mitteregg
+Mittersill
+Moosburg
+Mooswald
+Murau
+Mürzzuschlag
+Neumarkt
+Neusiedel
+Nikelsdorf
+Ober St.Paul
+Oberdrauburg
+Obergreutschach
+Obermühlbach
+Oberpullendorf
+Obervellach
+Oberwart
+Ossiach
+Parndorf
+Partenen
+Paternion
+Pinkafeld
+Pöchlarn
+Preitenegg
+Raabs
+Radenthein
+Radstadt
+Rangersdorf
+Rankweil
+Rauris
+Reichenau
+Reichenfels
+Reißeck
+Rennweg Katschberg
+Reutte
+Ried
+Rittersdorf
+Rohrbach
+Rosegg
+Rust
+Saalfelden
+Salzburg
+Schladming
+Sachsenburg
+Sankt Andrä
+Schiefling
+Schmieddorf
+Schönberg
+Schrems
+Schruns
+Schwabegg
+Schwaz
+Selzthal
+Silberegg
+Sillian
+Sonnegg
+Spielfeld
+Spittal/Drau
+St.Andrä
+St.Bartlmä
+St.Donat
+St.Filippen
+St.Georgen
+St.Georgen/Längsee
+St.Georgen/Lavanttal
+St.Georgen-Hartneidstein
+St.Jakob
+St.Jakob/Rosental
+St.Johann
+St.Johann/Pressen
+St.Kanzian
+St.Kathrein
+St.Kollmann
+St.Lorenzen/Lesachtal
+St.Marein
+St.Margarethen
+St.Martin/Mannsberg
+St.Martin/Silberberg
+St.Marxen
+St.Michael
+St.Michael/Zollfeld
+St.Nikolai
+St.Oswald
+St.Paul
+St.Peter
+St.Peter/Bichl
+St.Peter/Karlsberg
+St.Peter/Wallersberg
+St.Peter in Tweng
+St.Peter-Edling
+St.Pölten
+St.Ruprecht
+St.Salvator
+St.Stefan
+St.Thomas
+St.Ulrich
+St.Urban
+St.Veit/Glan
+St.Walburgen
+St.Wolfgang
+Steyr
+Stockerau
+Straßburg
+Tamsweg
+Techelsberg/Wörther See
+Traisen
+Treffen/Ossiacher See
+Tschagguns
+Tulln
+Unter St.Paul
+Unterferlach
+Unterloibl
+Unzmarkt
+Velden/Wörther See
+Villach
+Vöcklabruck
+Voitsberg
+Völkermarkt
+Waidegg
+Waidhofen
+Waidmannsdorf
+Waltendorf
+Warth
+Weinberg
+Weißenbach
+Weißensee
+Weißenstein
+Weitensfeld
+Wels
+Welzenegg
+Wien
+Wiener Neustadt
+Windisch Bleiberg
+Windisch St.Michael
+Wolfsberg
+Wörgl
+Ybbs
+Zedlitzdorf
+Zeiselberg
+Zell/See
+Zell/Moos
+Zell/Pettenfirst
+Zell/Pram
+Zell bei der Pfarre
+Zell bei Sonnegg
+Zell/Winkel
+Zeltweg
+Zinsdorf
+Zwettl

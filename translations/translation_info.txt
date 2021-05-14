@@ -1,0 +1,6 @@
+simurun_nl.qm,Dutch,dutch.png
+simurun_de.qm,German,german.png
+simurun_en.qm,English,english.png
+simurun_it.qm,Italian,italy.png
+simurun_pt.qm,Portuguese,portuguese.png
+simurun_es.qm,Spanish,spanish.png

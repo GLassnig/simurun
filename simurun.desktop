@@ -1,0 +1,30 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Encoding=UTF-8
+Categories=Qt;KDE;Games;Simulation;
+Icon=simurun2.png
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0
+Exec=simurun -caption "%c" %u
+GenericName=Simutrans Starter
+GenericName[de]=Simutrans Starter
+GenericName[en]=Simutrans Starter
+GenericName[nl]=Simutrans Starter
+GenericName[it]=Simutrans Starter
+GenericName[es]=Simutrans Starter
+GenericName[pt]=Simutrans Starter
+Name=Simutrans Starter
+Name[de]=Simutrans Starter
+Name[en]=Simutrans Starter
+Name[nl]=Simutrans Starter
+Name[it]=Simutrans Starter
+Name[es]=Simutrans Starter
+Name[pt]=Simutrans Starter
+Comment=Simutrans Starter - A small tool for the Simutrans Economic Simulation Game.
+Comment[de]=Simutrans Starter - Ein kleines Tool für die Simutrans Wirtschafts Simulation.
+Comment[nl]=Simutrans Starter - Is een kleine tool voor Simutrans Economische Simulatie.
+Comment[it]=Simutrans Starter - è un piccolo strumento per la Simutrans Economico Simulazione.
+Comment[es]=Simutrans Starter - para principiantes es una pequeña herramienta de Simutrans Económica Simulación.
+Comment[pt]=Simutrans Starter - é uma pequena ferramenta para Simutrans Simulação Económica.

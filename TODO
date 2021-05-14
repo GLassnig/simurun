@@ -1,0 +1,74 @@
+Todo list for Simutrans Starter Version 3
+
+Parse saved games from xml file.
+
+Support network games.
+
+******************************************************************************
+************************************* D O N E ********************************
+******************************************************************************
+
+Add 7z support
+
+# new height for old slopes when old single height savegame loaded with double height pak (default 1=single height, 2=double height)
+height_conversion_factor = 1
+
+# max distance for connected factories
+# if percentage>0, it will be in percent of the largest map dimension
+# percentage also overrides the absolute value
+max_factory_spacing_percentage = 25
+#max_factory_spacing = 40
+
+# true if transformers are allowed underground (default)
+allow_underground_transformers = 1
+
+# how much amount in transport is sent before further distribution stops
+# This is only enabled when "just_in_time" is enabled
+# The limit is given in percent of factory storage (0=off)
+# It should be not too low to allow big convoys fully loaded at more than one
+# factory (for medium sized maps 500 seems a reasonable number)
+maximum_intransit_percentage = 0
+
+# remove companies without convoys after x month (0=off, 6=default)
+remove_dummy_player_months = 6
+
+# remove password of abandoned companies (without any building activity) after x month (0=off default)
+unprotect_abandoned_player_months = 0
+
+# smallest distance between two adjacent factories
+min_factory_spacing = 6
+
+# number of periods for averaging the amount of arrived pax/mail at factories for boost calculation
+# one period represents a fixed interval of 2^18 ms in-game time
+# value can range from 1 to 16, inclusive; 1 means no averaging; default is 4
+factory_arrival_periods = 4
+
+# do not show the button to add an inverted schedule for rail based convoys
+# (1=hide, 0=show anyway)
+hide_rail_return_ticket = 1
+
+# don not show the buttons to delete old savegames (default)
+show_delete_buttons = 0
+
+# Draw the earth slope to mark the border (default 1 on)
+draw_earth_border = 1
+
+# Tile the outside with the ground.ouside.pak (default 0 off)
+draw_outside_tile = 0
+
+# Color of background outside the map, default: COL_GREY2 (210)
+#background_color = 210
+
+# Minimum distance of a city attraction to other special buildings
+#special_building_distance = 3
+
+# you can force fast redraw for fast forward by this (default off)
+simple_drawing_fast_forward = 1
+
+# How many threads to use (default 4)
+#threads = 4
+
+# Chat window transparency (0=off, 25, 50 75 are possible)
+chat_transparency = 75
+
+

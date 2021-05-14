@@ -1,0 +1,106 @@
+###############################################################################
+#!/bin/bash
+#
+# Dieses Script nicht benutzen, es dient nur zum erstellen meiner Rpm-Pakete.
+# Niet gebruiken dit script, het dient alleen maak ik RPM-pakketten.
+# Do not use this script, it only serves to create my RPM packages.
+#
+#
+# USAGE:
+# georg@mobilix:~>my_rpm projectname
+#
+###############################################################################
+if [ $1 ="" ]
+then
+echo -e "\033[0m"
+echo -e "\033[31mEs wude kein Projektname angeben!\033[0m" >&2
+echo -e "\033[34mUSAGE: my_rpm projectname\033[0m" >&2
+echo ""
+exit 1
+else
+APP_NAME=${1}
+fi
+
+#if [ $? -ne 0 ]
+#echo ""
+#echo "Es wude ein falscher Projektname angeben!" >&2
+#echo "USAGE: my_rpm projectname" >&2
+#echo ""
+#exit 1
+#else
+#APP_NAME=${1}
+#fi
+
+echo ""
+echo -e "\033[34mFühre make clean aus.\033[0m"
+make clean &&
+rm Makefile &&
+echo -e "\033[32mAusgeführt.\033[0m"
+echo ""
+
+echo -e "\033[34mFühre qmake aus.\033[0m"
+qmake $APP_NAME.pro &&
+if [ $? -ne 0 ]
+then
+echo -e "\033[31mqmake schlug fehl!\033[0m" >&2
+exit 1
+else
+echo -e "\033[32mqmake ausgeführt.\033[0m"
+fi
+echo ""
+
+echo -e "\033[34mFühre lrelease $APP_NAME.pro aus.\033[0m"
+lrelease $APP_NAME.pro &&
+if [ $? -ne 0 ]
+then
+echo -e "\033[31mlrelease $APP_NAME.pro fehl!\033[0m" >&2
+exit 1
+else
+echo -e "\033[32mlrelease $APP_NAME.pro ausgeführt.\033[0m"
+fi
+echo ""
+
+echo -e "\033[34mFühre make aus.\033[0m"
+make &&
+if [ $? -ne 0 ]
+then
+echo -e "\033[31mmake schlug fehl!\033[0m" >&2
+exit 1
+else
+echo -e "\033[32mmake ausgeführt.\033[0m"
+fi
+echo ""
+
+echo -e "\033[34mFühre make dist aus.\033[0m"
+make dist &&
+if [ $? -ne 0 ]
+then
+echo -e "\033[31mmake dist schlug fehl!\033[0m" >&2
+exit 1
+else
+echo -e "\033[32mmake dist ausgeführt.\033[0m"
+fi
+echo ""
+
+echo -e "\033[34mFühre mv -fv $APP_NAME-*.tar.gz $HOME/PAKETE/RPM/SOURCES/ aus.\033[0m"
+mv -fv $APP_NAME-*.tar.gz $HOME/PAKETE/RPM/SOURCES/ &&
+if [ $? -ne 0 ]
+then
+echo -e "\033[31mmv -fv $APP_NAME-*.tar.gz $HOME/PAKETE/RPM/SOURCES/ schlug fehl!\033[0m" >&2
+exit 1
+else
+echo -e "\033[32mmv -fv $APP_NAME-*.tar.gz $HOME/PAKETE/RPM/SOURCES/ ausgeführt.\033[0m"
+fi
+echo ""
+
+echo -e "\033[34mFühre rpmbuild -ba $APP_NAME.spec aus.\033[0m"
+rpmbuild -ba $APP_NAME.spec
+if [ $? -ne 0 ]
+then
+echo -e "\033[31mrpmbuild -ba $APP_NAME.spec schlug fehl!\033[0m" >&2
+exit 1
+else
+echo -e "\033[32mrpmbuild -ba $APP_NAME.spec ausgeführt.\033[0m"
+fi
+echo ""
+exit 0
